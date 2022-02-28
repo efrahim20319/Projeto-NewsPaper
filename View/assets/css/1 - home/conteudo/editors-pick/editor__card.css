@@ -1,0 +1,7 @@
+.editor__card {
+    margin: 0;
+}
+
+.editor__card:nth-child(4) {
+    margin: 0;
+}

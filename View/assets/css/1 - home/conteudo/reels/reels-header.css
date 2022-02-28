@@ -1,0 +1,7 @@
+.reels__header {
+    display: flex;
+    grid-column: 1/4;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}

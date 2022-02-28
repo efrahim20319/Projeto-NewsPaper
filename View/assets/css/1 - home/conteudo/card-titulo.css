@@ -1,0 +1,10 @@
+.card__titulo {
+    font-size: 1.25em;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.editor__main .card__titulo {
+    color: white;
+}

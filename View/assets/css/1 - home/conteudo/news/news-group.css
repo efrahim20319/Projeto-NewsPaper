@@ -1,0 +1,12 @@
+.news__group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    gap: .5em;
+    padding: 2em;
+    border: none;
+}
+
+.news__group:nth-child(2) {
+    padding-top: 0;
+}
