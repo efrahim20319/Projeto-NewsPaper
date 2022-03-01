@@ -1,0 +1,9 @@
+.menu__lista {
+    display: flex;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1em;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: rgb(187, 24, 25);;
+}

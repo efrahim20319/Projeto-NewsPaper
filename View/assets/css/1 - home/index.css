@@ -1,6 +1,6 @@
 @import url("../bootstrap-5.1.1-dist/css/bootstrap.css");
-@import url("./cabecalho/header-first/reset.css");
-@import url("./cabecalho/header-first/normalize.css");
+@import url("../reset.css");
+@import url("../normalize.css");
 @import url("./style.css");
 @import url("./cabecalho/header-first/header.css");
 @import url("./cabecalho/header-first/header-first.css");

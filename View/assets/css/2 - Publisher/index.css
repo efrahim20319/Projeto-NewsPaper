@@ -1,0 +1,7 @@
+@import url("../bootstrap-5.1.1-dist/css/bootstrap.css");
+@import url("../reset.css");
+@import url("../normalize.css");
+@import url("./cabecalho/cabecalho.css");
+@import url("./cabecalho/menu.css");
+@import url("./cabecalho/menu-lista.css");
+@import url("./cabecalho/menu-item.css");

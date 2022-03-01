@@ -2,7 +2,7 @@ const app = require("./ExpressConfig/customExpress")
 const config = require("config")
 const conexao = require("./infraestrutura/database/conexao")
 const tabelas = require("./infraestrutura/database/tabelas")
-const desporto = require("./Controller/desportos")
+const desporto = require("./Controller/desporto")
 
 
 conexao.connect((erro) => {
