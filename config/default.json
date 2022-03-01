@@ -1,0 +1,12 @@
+{
+    "app": {
+        "porta": 3000
+    },
+    "mysql" : {
+        "host": "localhost",
+        "password": "splinter20319",
+        "port": 3306,
+        "user": "root",
+        "database": "SmartNews"
+    }
+}
