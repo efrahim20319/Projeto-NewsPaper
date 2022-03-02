@@ -5,3 +5,11 @@
 @import url("./cabecalho/menu.css");
 @import url("./cabecalho/menu-lista.css");
 @import url("./cabecalho/menu-item.css");
+@import url("./cabecalho/cabecalho.css");
+@import url("./conteudo/conteudo.css");
+@import url("./conteudo/formulario.css");
+@import url("./conteudo/formulario-img.css");
+@import url("./conteudo/formulario-texto.css");
+@import url("./conteudo/formulario-input.css");
+@import url("./conteudo/formulario-div.css");
+@import url("./conteudo/formulario-submit.css");

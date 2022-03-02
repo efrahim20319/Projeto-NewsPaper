@@ -1,15 +1,10 @@
 const desporto = require("express").Router();
 const Desporto = require("../Model/desporto");
 
-desporto.get("/", (req, res) => {
-  Desporto.lista()
-    .then((resultados) => {
-      console.log(resultados);
-      res.send(resultados);
-    })
-    .catch((erro) => {
-      res.send(erro);
-    });
+desporto.get("/", async (req, res) => {
+  const resultados = await Desporto.lista();
+  res.status(200).json(resultados);
+
 });
 
 desporto.get("/:id", (req, res) => {

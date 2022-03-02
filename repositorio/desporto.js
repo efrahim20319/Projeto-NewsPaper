@@ -1,10 +1,10 @@
 const ExecutaQuery = require("../infraestrutura/database/query");
 
 class Desporto {
-  lista() {
-    const sql = "select * from Noticia where categoria = 1";
-
-    return ExecutaQuery(sql);
+  async lista() {
+    const sql = "SELECT * FROM Noticia WHERE categoria = 1;";
+    console.log("Fazendo:", sql);
+    return await ExecutaQuery(sql);
   }
 }
 

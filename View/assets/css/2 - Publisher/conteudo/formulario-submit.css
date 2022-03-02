@@ -1,0 +1,10 @@
+.formulario__submit {
+  color: white;
+  background-color: rgb(46, 97, 173);
+  width: 5em;
+  height: 2em;
+  border: none;
+  border-radius: 5px;
+  margin: 1em 0 1em 0;
+  float: right;
+}

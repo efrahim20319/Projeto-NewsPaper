@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/2 - Publisher/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/2 - Publisher/index.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="cabecalho">
-        <nav class="menu">
-            <ul class="menu__lista">
-                <li class="menu__item">HOME</li>
-                <li class="menu__item">LOGO</li>
-                <li class="menu__item">MENU</li>
-            </ul>
-        </nav>
+      <nav class="menu">
+        <ul class="menu__lista">
+          <li class="menu__item">HOME</li>
+          <li class="menu__item">LOGO</li>
+          <li class="menu__item">MENU</li>
+        </ul>
+      </nav>
     </header>
     <main class="conteudo">
-        <form class="formulario" action="" method="post">
-            
-        </form>
+      <form class="formulario" action="" method="POST">
+        <img class="formulario__img" src="../assets/img/download.jpeg" alt="" />
+        <div>
+          <div class="formulario__div">
+            <p class="formulario__texto">Título:</p>
+            <input
+              placeholder="Introduza o titulo"
+              class="formulario__input"
+              type="text"
+            />
+          </div>
+          <div class="formulario__div">
+            <p class="formulario__texto">Conteúdo:</p>
+            <textarea
+              name=""
+              class="formulario__input"
+              id="formulario__conteudo"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="formulario__div">
+            <label class="formulario__texto">Categoria:</label>
+            <select title="categoria" name="Categoria" id="categoria">
+              <option value="1">Desporto</option>
+              <option value="2">Mundo</option>
+              <option value="3">Angola</option>
+              <option value="4">Tecnologia</option>
+              <option value="5">Arte</option>
+              <option value="6">Saude</option>
+              <option value="7">Coronavirus</option>
+              <option value="8">Ciencia</option>
+            </select>
+          </div>
+          <div class="formulario__div">
+            <p class="formulario__texto">Imagem:</p>
+            <input type="file" class="formulario__input" name="" id="" />
+          </div>
+          <input type="submit" class="formulario__submit" value="Postar" />
+        </div>
+      </form>
     </main>
-</body>
+  </body>
 </html>

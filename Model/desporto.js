@@ -2,8 +2,9 @@ const conexao = require("../infraestrutura/database/conexao")
 const repositorio = require("../repositorio/desporto")
 
 class Desporto {
-    lista() {
-        return repositorio.lista()
+    async lista() {
+        const dados = await repositorio.lista()
+        return dados
     }
 }
 
