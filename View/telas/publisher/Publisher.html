@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/2 - Publisher/index.css" />
+    <link rel="stylesheet" href="../../assets/css/2 - Publisher/index.css" />
     <title>Document</title>
   </head>
   <body>
@@ -18,21 +18,32 @@
       </nav>
     </header>
     <main class="conteudo">
-      <form class="formulario" action="" method="POST">
-        <img class="formulario__img" src="../assets/img/download.jpeg" alt="" />
+      <form
+        class="formulario"
+        action="http://localhost:3000/news"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <img
+          class="formulario__img"
+          src="../../assets/img/download.jpeg"
+          alt=""
+        />
         <div>
           <div class="formulario__div">
             <p class="formulario__texto">Título:</p>
             <input
               placeholder="Introduza o titulo"
+              name="titulo"
               class="formulario__input"
               type="text"
             />
           </div>
           <div class="formulario__div">
-            <p class="formulario__texto">Conteúdo:</p>
+            <label class="formulario__texto">Conteúdo:</label>
             <textarea
-              name=""
+              placeholder="O conteúdo vem aqui"
+              name="conteudo"
               class="formulario__input"
               id="formulario__conteudo"
               cols="30"
@@ -41,7 +52,7 @@
           </div>
           <div class="formulario__div">
             <label class="formulario__texto">Categoria:</label>
-            <select title="categoria" name="Categoria" id="categoria">
+            <select title="categoria" name="categoria" id="categoria">
               <option value="1">Desporto</option>
               <option value="2">Mundo</option>
               <option value="3">Angola</option>
@@ -54,7 +65,13 @@
           </div>
           <div class="formulario__div">
             <p class="formulario__texto">Imagem:</p>
-            <input type="file" class="formulario__input" name="" id="" />
+            <input
+              placeholder="Selecione o arquivo"
+              type="file"
+              class="formulario__input"
+              name="imagem"
+              id=""
+            />
           </div>
           <input type="submit" class="formulario__submit" value="Postar" />
         </div>

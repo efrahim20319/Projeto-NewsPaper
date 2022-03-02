@@ -3,6 +3,7 @@ const config = require("config")
 const conexao = require("./infraestrutura/database/conexao")
 const tabelas = require("./infraestrutura/database/tabelas")
 const desporto = require("./Controller/desporto")
+const news = require("./Controller/news")
 
 
 conexao.connect((erro) => {
@@ -11,6 +12,7 @@ conexao.connect((erro) => {
     } else {
         const port = config.get("app.porta")
         tabelas.init(conexao)
+        app.use("/news", news)
         app.use("/news/desportos", desporto)
         app.listen(port, () => console.log(`Rodando na porta ${port}`))
     }
