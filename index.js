@@ -3,8 +3,7 @@ const config = require("config")
 const conexao = require("./infraestrutura/database/conexao")
 const tabelas = require("./infraestrutura/database/tabelas")
 const desporto = require("./Controller/desporto")
-const news = require("./Controller/news")
-
+const news = require("./Controller/News/news")
 
 conexao.connect((erro) => {
     if (erro) {

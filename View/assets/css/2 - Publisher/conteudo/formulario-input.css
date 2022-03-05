@@ -1,3 +1,5 @@
 .formulario__input {
     width: 100%;
+    border: none;
+    background-color: rgb(221, 221, 221);
 }
