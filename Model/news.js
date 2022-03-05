@@ -12,6 +12,10 @@ class News {
     async UltimoID (){
         return await repositorio.UltimoID()
     }
+
+    async listaCategoria() {
+        return await repositorio.listaCategoria()
+    }
 }
 
 module.exports = new News()

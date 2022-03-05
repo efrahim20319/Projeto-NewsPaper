@@ -9,14 +9,20 @@ class News {
 
   async inserir(dados) {
     const sql = "INSERT INTO Noticia SET ?";
-    console.log("Fazendo:",sql);
+    console.log("Fazendo:", sql);
     return ExecutaQuery(sql, dados);
   }
 
   async UltimoID() {
-    const sql = "SELECT max(id) AS Ultimo FROM Noticia;"
-    console.log("Fazendo:",sql);
-    return ExecutaQuery(sql)
+    const sql = "SELECT max(id) AS Ultimo FROM Noticia;";
+    console.log("Fazendo:", sql);
+    return await ExecutaQuery(sql);
+  }
+
+  async listaCategoria() {
+    const sql = "SELECT * FROM Categoria;";
+    console.log("Fazendo:", sql);
+    return await ExecutaQuery(sql);
   }
 }
 
