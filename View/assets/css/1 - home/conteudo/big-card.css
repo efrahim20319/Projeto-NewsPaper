@@ -1,7 +1,7 @@
 .big__card {
     display: grid;
-    gap: .5em;
-    height: 30em;
+    gap: 1em;
+    /* height: 30em; */
     margin: 0;
     padding: 1em 2em;
     grid-template-columns: repeat(5, 1fr);

@@ -16,6 +16,10 @@ class News {
     async listaCategoria() {
         return await repositorio.listaCategoria()
     }
+
+    async mainNews() {
+        return await repositorio.mainNews()
+    }
 }
 
 module.exports = new News()

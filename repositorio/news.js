@@ -19,6 +19,12 @@ class News {
     return await ExecutaQuery(sql);
   }
 
+  async mainNews() {
+    const sql = "select id, titulo, imagem, dataCriacao from Noticia order by datacriacao desc limit 7;"
+    console.log("Fazendo:", sql);
+    return await ExecutaQuery(sql)
+  }
+
   async listaCategoria() {
     const sql = "SELECT * FROM Categoria;";
     console.log("Fazendo:", sql);
