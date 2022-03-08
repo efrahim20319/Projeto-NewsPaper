@@ -9,6 +9,11 @@ news.get("/", async (req, res) => {
   res.status(200).send(dados);
 });
 
+news.get("/group1", async (req, res) => {
+  const dados = await News.Group1()
+  res.status(200).json(dados)
+})
+
 news.get("/main-news", async (req, res) => {
   const dados = await News.mainNews()
   res.status(200).json(dados)

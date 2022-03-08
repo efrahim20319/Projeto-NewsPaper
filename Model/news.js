@@ -17,6 +17,11 @@ class News {
         return await repositorio.listaCategoria()
     }
 
+
+    async Group1() {
+        return await repositorio.Group1()
+    }
+
     async mainNews() {
         return await repositorio.mainNews()
     }

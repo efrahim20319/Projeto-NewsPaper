@@ -1,4 +1,9 @@
 .news__imagem {
-    height: 70%;
-    width: 100%;
+	height: 15em;
+	width: 100%;
+	transition: ease-in 0.1s;
+}
+
+.news__imagem:hover {
+	filter: brightness(130%);
 }
