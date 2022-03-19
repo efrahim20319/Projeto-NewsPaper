@@ -15,7 +15,7 @@ function Carregar() {
       const dados = Object.assign({}, corpo, { imagem: imagem });
       let ultimoId = await News.UltimoID()
       ultimoId = ultimoId[0].Ultimo + 1
-      dados.imagem = `${ultimoId} - ${corpo.categoria} - ${moment().format("YYYY-MM-DD HH:mm:ss" )}${extensao}`;
+      dados.imagem = `${ultimoId} - ${corpo.categoria} - ${moment().format("YYYY-MM-DD HH_mm_ss" )}${extensao}`;
       News.inserir(dados)
         .then(() => {
           cb(null, dados.imagem);
