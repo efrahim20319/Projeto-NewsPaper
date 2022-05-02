@@ -1,0 +1,14 @@
+.news__card {
+    background-color: white;
+    margin: 0;
+    height: max-content;
+}
+
+/* .news__group .news__card > div {
+    color: red;
+    height: 10em;
+} */
+
+.news__card:last-child {
+    margin-right: 0;
+}

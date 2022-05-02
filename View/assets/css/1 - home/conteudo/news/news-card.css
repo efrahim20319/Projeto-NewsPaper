@@ -1,9 +1,0 @@
-.news__card {
-    background-color: white;
-    margin: 0;
-    height: fit-content;
-}
-
-.news__card:last-child {
-    margin-right: 0;
-}

@@ -1,0 +1,15 @@
+.news__description {
+    color:rgb(134, 134, 134);
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+    text-align: justify;
+    margin: 0;
+}
+
+.news__group .news__description div {
+    color: red;
+}
+
+.editor__main .news__description {
+    color: rgb(189, 189, 189);
+}

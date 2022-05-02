@@ -22,9 +22,27 @@ class News {
         return await repositorio.Group1()
     }
 
+    async GroupDesporto() {
+        try {
+            return await repositorio.GrupoDesportos()
+        } catch (error) {
+            throw new Error("Erro ao Listar Grupo")
+        }
+    }
+
     async mainNews() {
         return await repositorio.mainNews()
     }
+
+    async deletar(id) {
+        try {
+            return await repositorio.deletar(id)
+        } catch (erro) {
+            throw new Error("Impossivel apagar a noticia")
+        }
+    }
+
+    
 }
 
 module.exports = new News()
