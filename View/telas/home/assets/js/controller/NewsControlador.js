@@ -40,7 +40,7 @@ class NewsControlador {
         const template = `
         <div>
             <img draggable="false" class="news__imagem" src="${this.corrigirCaminho( Noticia.imagem)}" alt="" /> 
-            <div class="card__body"> <figcaption class="card__titulo">${ this.minimizarConteudo(Noticia.titulo, 40)}</figcaption>
+            <div class="card__body"> <figcaption class="card__titulo"><abbr title="${Noticia.titulo}">${ this.minimizarConteudo(Noticia.titulo, 40)}</abbr></figcaption>
                 <p class="news__description"> ${this.minimizarConteudo(Noticia.conteudo, 130)} </p> 
             </div>
         </div>

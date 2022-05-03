@@ -4,10 +4,11 @@
     width: fit-content;
     text-align: justify;
     margin: 0;
+    line-clamp: 3;
 }
 
 .news__group .news__description div {
-    color: red;
+    
 }
 
 .editor__main .news__description {

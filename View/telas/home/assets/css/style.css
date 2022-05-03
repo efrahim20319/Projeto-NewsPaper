@@ -9,7 +9,3 @@ body {
     --footerAmbiente: rgb(46, 192, 36);
     --footerSociedade: rgb(20, 38, 179);
 }
-
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
