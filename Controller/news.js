@@ -9,6 +9,16 @@ news.get("/", async (req, res) => {
   res.status(200).send(dados);
 });
 
+news.get("/grupoAfrica", async(req, res) => {
+  try {
+    const dados = await NewsModelo.GroupAfrica()
+    res.status(200).json(dados)
+  } catch (erro) {
+    res.status(500).json({erro: erro.message})
+  }
+
+})
+
 news.get("/group1", async (req, res) => {
   const dados = await NewsModelo.Group1()
   res.status(200).json(dados)

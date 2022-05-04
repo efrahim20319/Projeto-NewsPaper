@@ -1,3 +1,5 @@
 .africa__news {
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2em auto;
+    height: 33em;
 }

@@ -22,6 +22,10 @@ class News {
         return await repositorio.Group1()
     }
 
+    async GroupAfrica() {
+        return await repositorio.GroupAfrica()
+    }
+
     async GroupDesporto() {
         try {
             return await repositorio.GrupoDesportos()

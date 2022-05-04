@@ -26,3 +26,11 @@
 .Sociedade {
     border-left: 5px solid var(--footerSociedade);
 }
+
+.Entretenimento {
+    border-left: 5px solid var(--footerEntretenimento);
+}
+
+.Africa {
+    border-left: 5px solid var(--footerAfrica);
+}

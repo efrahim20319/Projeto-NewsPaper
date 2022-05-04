@@ -4,6 +4,7 @@ class NewsControlador {
         await this.renderizarBigCard()
         await this.renderizarGrupo1()
         await this.renderizarGrupoDesporto()
+        await this.renderizarGrupoAfrica()
     }
 
     static async renderizarBigCard() {
@@ -12,6 +13,14 @@ class NewsControlador {
         cards.forEach(card => {
             divBigCard.appendChild(this.CriarCard(card))
         });
+    }
+
+    static async renderizarGrupoAfrica() {
+        const news = await Services.listarGrupoAfrica()
+        const divNews = document.querySelector(".africa__news");
+        news.forEach(noticia => {
+            divNews.appendChild(this.criarNoticia(noticia))
+        })
     }
 
     static async renderizarGrupoDesporto() {

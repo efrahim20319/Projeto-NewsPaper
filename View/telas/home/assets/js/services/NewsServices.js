@@ -4,6 +4,11 @@ export default class Services{
         if (dados.ok) return dados.json();
     }
 
+    static async listarGrupoAfrica() {
+        const dados = await fetch("http://localhost:3000/news/grupoAfrica")
+        if (dados.ok) return dados.json()
+    }
+
     static async listarNoticiasPrincipais() {
         const noticias = await fetch("http://localhost:3000/news/main-news")
         if (noticias.ok)

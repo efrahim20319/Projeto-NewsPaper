@@ -9,5 +9,6 @@
 }
 
 .africa__news .group__title {
+    height: 1em;
     grid-column: 1/5;
 }

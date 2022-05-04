@@ -38,6 +38,12 @@ class News {
 		return await ExecutaQuery(sql);
 	}
 
+	async GroupAfrica() {
+		const sql = "SELECT A.id, A.titulo, A.imagem, A.conteudo, B.titulo as categoria FROM Noticia A inner join Categoria B on A.categoria = B.id WHERE A.Categoria = 12 order by A.dataCriacao desc limit 4"
+		console.log("Listando Noticias de Africa");
+		return await ExecutaQuery(sql)
+	}
+
 	async GrupoDesportos() {
 		const sql = "SELECT A.id, A.titulo, A.imagem, A.conteudo, B.titulo as categoria FROM Noticia A inner join Categoria B on A.categoria = B.id WHERE A.Categoria = 1 order by A.dataCriacao limit 2, 3;"
 		console.log("Listando os desportos");
