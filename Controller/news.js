@@ -16,7 +16,6 @@ news.get("/grupoAfrica", async(req, res) => {
   } catch (erro) {
     res.status(500).json({erro: erro.message})
   }
-
 })
 
 news.get("/group1", async (req, res) => {

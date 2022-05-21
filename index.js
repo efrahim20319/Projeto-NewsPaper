@@ -17,6 +17,10 @@ conexao.connect((erro) => {
         const publicView = path.resolve(__dirname, 'View', 'telas')
         app.use(express.static(publicView))
 
+        app.get("/", (req, res) => {
+            res.status(300).redirect("http://localhost:3000/home")
+        })
+
         app.get("/home", (req, res) => {
             const html = fs.readFileSync(path.resolve(publicView,'home','index.html'), "utf-8")
             res.send(html)
