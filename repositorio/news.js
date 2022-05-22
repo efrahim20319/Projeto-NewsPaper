@@ -51,10 +51,20 @@ class News {
 		return await ExecutaQuery(sql);
 	}
 
+	async pegarPorId(id) {
+		try {
+			const sql = "SELECT * FROM Noticia where id = ?"
+			console.log("Pegando a Noticia de Id: ", id);
+			return await ExecutaQuery(sql, id)
+		} catch (erro) {
+			throw new Error("SQL Error")
+		}
+	}
+
 	async deletar(id) {
 		try {
 			const sql = "DELETE FROM Noticia WHERE id = ?";
-			console.log("Apagendo a Noticia de Id: ", id);
+			console.log("Apagando a Noticia de Id: ", id);
 			return await ExecutaQuery(sql, id);
 		} catch (error) {
 			throw new Error("SQL Error");

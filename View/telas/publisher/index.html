@@ -1,75 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <link rel="shortcut icon" href="./assets/img/smartbitLogo.jpeg" type="image/x-icon">
-    <title>Publisher</title>
-  </head>
-  <body>
-    <header class="cabecalho">
-      <nav class="menu">
-        <ul class="menu__lista">
-          <a href="http://localhost:3000/home/"><li class="menu__item">HOME</li></a>
-          <a href="http://localhost:3000/publisher"><li class="menu__item">PUBLISHER</li></a>
-          <a href=""><li class="menu__item">MENU</li></a>
-        </ul>
-      </nav>
-    </header>
-    <main class="conteudo">
-      <form
-        class="formulario"
-        action="http://localhost:3000/news"
-        method="post"
-        enctype="multipart/form-data"
-      >
-        <img
-          draggable="false"
-          class="formulario__img"
-          src="./assets/img/smartbitLogo.jpeg"
-          alt=""
-        />
-        <div>
-          <div class="formulario__div">
-            <p class="formulario__texto">Título:</p>
-            <input
-              placeholder="Introduza o titulo"
-              name="titulo"
-              class="formulario__input"
-              type="text"
-            />
-          </div>
-          <div class="formulario__div">
-            <label class="formulario__texto">Conteúdo:</label>
-            <textarea
-              placeholder="O conteúdo vem aqui"
-              name="conteudo"
-              class="formulario__input"
-              id="formulario__conteudo"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-          <div class="formulario__div">
-            <label class="formulario__texto">Categoria:</label>
-            <select title="categoria" name="categoria" id="categoria"></select>
-          </div>
-          <div class="formulario__div">
-            <p class="formulario__texto">Imagem:</p>
-            <input
-              placeholder="Selecione o arquivo"
-              type="file"
-              class="formulario__input"
-              name="imagem"
-              id=""
-            />
-          </div>
-          <input type="submit" class="formulario__submit" value="Postar" />
-        </div>
-      </form>
-    </main>
-    <script type="module" src="./assets/js/controller/lista-categorias.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/index.css" />
+		<link
+			rel="shortcut icon"
+			href="./assets/img/smartbitLogo.jpeg"
+			type="image/x-icon"
+		/>
+		<title>Publisher</title>
+	</head>
+	<body>
+		<header class="cabecalho">
+			<nav class="menu">
+				<ul class="menu__lista">
+					<a href="http://localhost:3000/home/"><li class="menu__item">HOME</li></a>
+					<a href="http://localhost:3000/publisher"><li class="menu__item">PUBLISHER</li></a>
+					<a href=""><li class="menu__item">MENU</li></a>
+				</ul>
+			</nav>
+		</header>
+		<main class="conteudo">
+			<form
+				class="formulario"
+				action="http://localhost:3000/news"
+				method="post"
+				enctype="multipart/form-data"
+			>
+				<img
+					draggable="false"
+					class="formulario__img"
+					src="./assets/img/smartbitLogo.jpeg"
+					alt=""
+				/>
+				<div>
+					<div class="formulario__div">
+						<p class="formulario__texto">Título:</p>
+						<input
+							placeholder="Introduza o titulo"
+							name="titulo"
+							class="formulario__input"
+							type="text"
+						/>
+					</div>
+					<div class="formulario__div">
+						<label class="formulario__texto">Conteúdo:</label>
+						<textarea
+							placeholder="O conteúdo vem aqui"
+							name="conteudo"
+							class="formulario__input"
+							id="formulario__conteudo"
+							cols="30"
+							rows="10"
+						></textarea>
+					</div>
+					<div class="formulario__div">
+						<label class="formulario__texto">Categoria:</label>
+						<select
+							title="categoria"
+							name="categoria"
+							id="categoria"
+						></select>
+					</div>
+					<div class="formulario__div">
+						<p class="formulario__texto">Imagem:</p>
+						<input
+							placeholder="Selecione o arquivo"
+							type="file"
+							class="formulario__input"
+							name="imagem"
+							id=""
+						/>
+					</div>
+					<input
+						type="submit"
+						class="formulario__submit"
+						value="Postar"
+					/>
+				</div>
+			</form>
+		</main>
+		<script type="module" src="./assets/js/controller/lista-categorias.js"></script>
+	</body>
 </html>
