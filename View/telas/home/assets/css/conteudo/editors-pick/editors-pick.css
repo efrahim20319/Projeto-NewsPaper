@@ -1,7 +1,0 @@
-.editors__pick {
-    display: grid;
-    gap: 1em;
-    padding: calc(2em);
-    grid-template-columns: 70% auto;
-    background-color: #f6f6f6;
-}

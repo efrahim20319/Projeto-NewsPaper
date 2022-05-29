@@ -1,0 +1,8 @@
+.card__imagem {
+    height: 70%;
+    width: 100%;
+}
+
+.big__card .card__imagem:not(._card:first-child .card__imagem){
+    height: 10.5em;
+}

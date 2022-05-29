@@ -1,0 +1,7 @@
+.future__title {
+    border: 3px solid green;
+    padding: .1em;
+    font-size: 2em;
+    width: fit-content;
+    color: white;
+}

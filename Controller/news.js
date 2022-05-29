@@ -44,14 +44,11 @@ news.get("/desportos", async (req, res) => {
 });
 
 news.post("/", upload.single("imagem"), (req, res) => {
-	const corpo = req.body;
-	const imagem = req.file.filename;
-	const extensao = path.extname(imagem);
-	const dados = Object.assign({}, corpo, { imagem: imagem });
-	dados.imagem = `${corpo.categoria} - ${moment().format(
-		"YYYY-MM-DD HH:mm:ss"
-	)}${extensao}`;
-	res.json(dados);
+	try {
+		res.status(200).redirect("http://localhost:3000/publicada")
+	} catch (error) {
+		res.status(500).json({error: error.message})
+	}
 });
 
 news.route("/:id")
@@ -69,7 +66,7 @@ news.route("/:id")
 			const id = Number(req.params.id);
 			const respostaQuery = await NewsModelo.pegarPorId(id)
 			const news = {...respostaQuery['0']}
-			const caminhoDaImagem = path.resolve("./View/telas/uploads",news.imagem)
+			const caminhoDaImagem = path.resolve("./Views/telas/uploads",news.imagem)
 			await NewsModelo.deletar(id);
 			fs.unlinkSync(caminhoDaImagem)
 			res.send(`Noticia de ID ${id} apagada com sucesso`);

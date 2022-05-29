@@ -1,8 +1,0 @@
-.editor__card {
-    margin: 0;
-    gap: 1em;
-}
-
-.editor__card:nth-child(4) {
-    margin: 0;
-}

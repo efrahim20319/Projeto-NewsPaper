@@ -1,9 +1,0 @@
-.editor__main {
-    margin: 0;
-    grid-column: 1/4;
-    grid-row: 1/2;
-    /* background-image: url("../../../img/landscape.jpg"); */
-    background-position: center;
-    background-size: cover;
-    height: 25em;
-}

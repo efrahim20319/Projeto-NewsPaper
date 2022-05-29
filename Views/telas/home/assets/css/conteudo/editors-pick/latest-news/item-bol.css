@@ -1,0 +1,7 @@
+.item__bol {
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    margin-right: 20px;
+    padding: 1em 1.45em;
+}

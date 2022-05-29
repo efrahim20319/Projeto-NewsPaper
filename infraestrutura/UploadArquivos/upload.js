@@ -6,7 +6,7 @@ const News = require("../../Model/news");
 function Carregar() {
   const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, "./View/telas/uploads");
+      cb(null, "./Views/telas/uploads");
     },
     filename: async function (req, file, cb) {
       const corpo = req.body;

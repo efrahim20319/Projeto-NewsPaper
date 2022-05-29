@@ -1,0 +1,36 @@
+.news__footer{
+    border-left: 5px solid #e91802;
+    padding-left: 5px;
+}
+
+/* .news__group:nth-of-type(3) .group__title {
+    border-left: 5px solid #ffd930;
+}
+
+.news__group:nth-of-type(3) .news__footer {
+    border-left: 5px solid #ffd930;
+} */
+
+.Desporto {
+    border-left: 5px solid var(--footerDesporto);
+}
+
+.Mundo {
+    border-left: 5px solid var(--footerMundo);
+}
+
+.Ambiente {
+    border-left: 5px solid var(--footerAmbiente);;
+}
+
+.Sociedade {
+    border-left: 5px solid var(--footerSociedade);
+}
+
+.Entretenimento {
+    border-left: 5px solid var(--footerEntretenimento);
+}
+
+.Africa {
+    border-left: 5px solid var(--footerAfrica);
+}
