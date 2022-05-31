@@ -1,0 +1,10 @@
+.field_input:not(.field_input[type="date"]) {
+    border: none;
+    width: 15em;
+    border-radius: 5px;
+    height: 1.5em;
+}
+
+.field_input:active {
+    border: none;
+}

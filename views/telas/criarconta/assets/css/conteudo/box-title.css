@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-Regular.ttf");
+}
+
+.box_title {
+    font-family: Roboto;
+    color: #2150cf;
+    font-weight: 700;
+    font-size: 2.6em;
+    margin: 0 0 .5em 0;
+}

@@ -1,0 +1,11 @@
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 3.8em);
+    /* background-color: #fdfdfd; */
+    background-image: url("../../img/Windows-11-Wallpaper02.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

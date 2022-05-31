@@ -1,0 +1,11 @@
+.box_link {
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 10px;
+    background-color: rgb(193, 41, 41);
+    transition: background-color .5s ease;
+}
+
+.box_link:hover {
+    background-color: rgb(100, 13, 13);
+}

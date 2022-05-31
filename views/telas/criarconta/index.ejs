@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/index.css" />
+		<link
+			rel="shortcut icon"
+			href="./assets/img/smartbitLogo.jpeg"
+			type="image/x-icon"
+		/>
+		<title>SmartNews</title>
+	</head>
+	<body>
+		<header class="cabecalho">
+			<nav class="menu">
+				<ul class="menu__lista">
+					<a href="http://localhost:3000/home/"
+						><li class="menu__item">INÍCIO</li></a
+					>
+					<a href="http://localhost:3000/entrar"><li class="menu__item">INICIAR SESSÃO</li></a>
+				</ul>
+			</nav>
+		</header>
+		<main class="conteudo">
+			<div class="box">
+				<h1 class="box_title">Criar Conta SmartNews</h1>
+				<form action="" method="post">
+					<div class="field">
+						<span class="field_title">Nome: </span
+						><input
+							placeholder="Introduza seu nome"
+							class="field_input"
+							name="nome"
+							type="text"
+							name=""
+							id=""
+						/>
+					</div>
+					<div class="field">
+						<span class="field_title">E-mail: </span
+						><input
+							placeholder="Introduza seu e-mail"
+							class="field_input"
+							type="email"
+							name="email"
+							id=""
+						/>
+					</div>
+					<div class="field">
+						<span class="field_title">Senha: </span
+						><input
+							placeholder="Introduza a palavra-passe"
+							class="field_input"
+							type="password"
+							name="senha"
+							id=""
+						/>
+					</div>
+					<div class="">
+						<span>Sexo</span><br />
+						Masculino:
+						<input type="radio" name="sexo" value="M" id="" />
+						Feminino:
+						<input type="radio" name="sexo" value="F" id="" />
+					</div>
+					<div class="field">
+						<span class="field_title">Data de Nascimento: </span
+						><input
+							class="field_input"
+							type="date"
+							name="data-nascimento"
+							id=""
+						/>
+					</div>
+					<button class="btn-primary form__submit" type="submit">
+						Cadastrar
+					</button>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>

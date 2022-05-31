@@ -8,7 +8,7 @@ class Tabelas {
 
     criarTbNoticia() {
         const sql = `
-        CREATE TABLE if not exists \`Noticia\` (
+        CREATE TABLE if not exists \`noticia\` (
             \`id\` int NOT NULL AUTO_INCREMENT primary key,
             \`titulo\` varchar(255) NOT NULL,
             \`categoria\` int NOT NULL,
@@ -28,7 +28,7 @@ class Tabelas {
     }
 
     criarTbCategoria() {
-        const sql = "CREATE TABLE IF NOT EXISTS Categoria ( id int PRIMARY KEY AUTO_INCREMENT, titulo VARCHAR (255) NOT NULL);"
+        const sql = "CREATE TABLE IF NOT EXISTS categoria ( id int PRIMARY KEY AUTO_INCREMENT, titulo VARCHAR (255) NOT NULL);"
 
         this.conexao.query(sql, (erro) => {
             if (erro) {

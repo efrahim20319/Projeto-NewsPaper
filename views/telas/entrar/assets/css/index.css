@@ -1,0 +1,17 @@
+@import url("./bootstrap-5.1.1-dist/css/bootstrap.css");
+@import url("./reset.css");
+@import url("./normalize.css");
+@import url("./cabecalho/cabecalho.css");
+@import url("./cabecalho/menu.css");
+@import url("./cabecalho/menu-lista.css");
+@import url("./cabecalho/menu-item.css");
+@import url("./cabecalho/cabecalho.css");
+@import url("./conteudo/conteudo.css");
+@import url("./conteudo/box.css");
+@import url("./conteudo/box-title.css");
+@import url("./conteudo/box_link.css");
+@import url("./conteudo/box_img.css");
+@import url("./conteudo/field.css");
+@import url("./conteudo/field_input.css");
+@import url("./conteudo/form__submit.css");
+@import url("./conteudo/form.css");

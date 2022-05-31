@@ -33,6 +33,13 @@ conexao.connect((erro) => {
             res.render("./telas/publicada/index")
         })
 
+        app.get("/entrar", (req, res) => {
+            res.render("./telas/entrar/index")
+        })
+
+        app.get("/criarconta", (req, res) => {
+            res.render("./telas/criarconta/index")
+        })
         
         app.get("/publisher", (req, res) => {
            res.render("./telas/publisher/index")
