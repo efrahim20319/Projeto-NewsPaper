@@ -16,7 +16,7 @@ conexao.connect((erro) => {
         app.set("view engine", "ejs")
         const port = config.get("app.porta")
         tabelas.init(conexao)
-        const publicView = path.resolve(__dirname, 'Views', 'telas')
+        const publicView = path.resolve(__dirname, 'views', 'telas')
         app.use(express.static(publicView))
         
         

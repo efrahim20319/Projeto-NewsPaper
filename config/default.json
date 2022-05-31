@@ -3,7 +3,7 @@
         "porta": 3000
     },
     "mysql" : {
-        "host": "localhost",
+        "host": "127.0.0.1",
         "password": "splinter20319",
         "port": 3308,
         "user": "root",
