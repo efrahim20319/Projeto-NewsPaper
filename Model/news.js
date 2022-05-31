@@ -28,6 +28,18 @@ class News {
 		return await repositorio.Group1();
 	}
 
+	async grupoEntretenimento() {
+		return await repositorio.grupoEntretenimento()
+	}
+
+	async grupoMaisNoticias() {
+		return await repositorio.grupoMaisNoticias()
+	}
+
+	async cardMaisNoticias() {
+		return await repositorio.cardMaisNoticias()
+	}
+
 	async GroupAfrica() {
 		return await repositorio.GroupAfrica();
 	}

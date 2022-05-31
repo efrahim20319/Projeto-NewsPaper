@@ -4,8 +4,8 @@
     },
     "mysql" : {
         "host": "localhost",
-        "password": "",
-        "port": 3306,
+        "password": "splinter20319",
+        "port": 3308,
         "user": "root",
         "database": "SmartNews"
     }

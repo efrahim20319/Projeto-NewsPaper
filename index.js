@@ -26,13 +26,13 @@ conexao.connect((erro) => {
             res.status(300).redirect("http://localhost:3000/home")
         })
         
+        app.get("/home", (req, res) => {
+           res.render("./telas/home/index")
+        })
         app.get("/publicada", (req, res) => {
             res.render("./telas/publicada/index")
         })
 
-        app.get("/home", (req, res) => {
-           res.render("./telas/home/index")
-        })
         
         app.get("/publisher", (req, res) => {
            res.render("./telas/publisher/index")

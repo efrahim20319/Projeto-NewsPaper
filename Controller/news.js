@@ -19,6 +19,33 @@ news.get("/grupoAfrica", async (req, res) => {
 	}
 });
 
+news.get("/grupoEntretenimento", async (req, res) => {
+	try {
+		const dados = await NewsModelo.grupoEntretenimento()
+		res.status(200).json(dados)
+	} catch (erro) {
+		res.status(500).json({ erro: erro.message });
+	}
+})
+
+news.get("/grupoMaisNoticias", async (req, res) => {
+	try {
+		const dados = await NewsModelo.grupoMaisNoticias()
+		res.status(200).json(dados)
+	} catch (erro) {
+		res.status(500).json({ erro: erro.message });
+	}
+})
+
+news.get("/cardMaisNoticias", async (req, res) => {
+	try {
+		const dados = await NewsModelo.cardMaisNoticias()
+		res.status(200).json(dados)
+	} catch (erro) {
+		res.status(500).json({ erro: erro.message });
+	}
+})
+
 news.get("/group1", async (req, res) => {
 	const dados = await NewsModelo.Group1();
 	res.status(200).json(dados);
@@ -50,7 +77,6 @@ news.post("/", upload.single("imagem"), (req, res) => {
 		res.status(500).json({error: error.message})
 	}
 });
-
 news.route("/:id")
 	.get(async (req, res, next) => {
     try {
@@ -74,5 +100,6 @@ news.route("/:id")
 			next(erro)
 		}
 	});
+
 
 module.exports = news;

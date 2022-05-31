@@ -25,6 +25,24 @@ class News {
 		return await ExecutaQuery(sql);
 	}
 
+	async grupoEntretenimento() {
+		const sql = `select A.id, A.titulo, A.imagem, A.dataCriacao, A.conteudo, B.titulo as categoria from Noticia A inner join Categoria B on A.categoria = B.id where B.titulo = "Entretenimento" order by datacriacao desc limit 3;`
+		console.log("Pegando noticias Entretenimento");
+		return await ExecutaQuery(sql)
+	}
+
+	async grupoMaisNoticias() {
+		const sql = `select A.id, A.titulo, A.imagem, A.dataCriacao, A.conteudo, B.titulo as categoria from Noticia A inner join Categoria B on A.categoria = B.id order by datacriacao desc limit 16, 6;`
+		console.log("Pegando noticias Grupo More News");
+		return await ExecutaQuery(sql)
+	}
+
+	async cardMaisNoticias() {
+		const sql = `select A.id, A.titulo, A.imagem, A.dataCriacao, A.conteudo, B.titulo as categoria from Noticia A inner join Categoria B on A.categoria = B.id order by datacriacao desc limit 22, 1;`
+		console.log("Pegando noticias Grupo More News");
+		return await ExecutaQuery(sql)
+	}
+
 	async Group1() {
 		const sql =
 			"select A.id, A.titulo, A.imagem, A.dataCriacao, A.conteudo, B.titulo as categoria from Noticia A inner join Categoria B on A.categoria = B.id order by datacriacao desc limit 8, 3;";

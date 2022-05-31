@@ -20,4 +20,22 @@ export default class Services{
         if (noticias.ok)
             return noticias.json()
     }
+
+    static async grupoEntretenimento() {
+        const noticias = await fetch("http://localhost:3000/news/grupoEntretenimento")
+        if (noticias.ok)
+            return noticias.json()
+    }
+
+    static async grupoMaisNoticias() {
+        const noticias = await fetch("http://localhost:3000/news/grupoMaisNoticias")
+        if (noticias.ok)
+            return noticias.json()
+    }
+
+    static async cardMaisNoticias() {
+        const noticias = await fetch("http://localhost:3000/news/cardMaisNoticias")
+        if (noticias.ok)
+            return noticias.json()
+    }
 }
