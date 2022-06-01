@@ -19,24 +19,19 @@
 					<a href="http://localhost:3000/home/"
 						><li class="menu__item">INÍCIO</li></a
 					>
-					<a href="http://localhost:3000/entrar"><li class="menu__item">INICIAR SESSÃO</li></a>
+					<a href="http://localhost:3000/entrar"
+						><li class="menu__item">INICIAR SESSÃO</li></a
+					>
 				</ul>
 			</nav>
 		</header>
 		<main class="conteudo">
 			<div class="box">
 				<h1 class="box_title">Criar Conta SmartNews</h1>
-				<form action="" method="post">
+				<form action="http://localhost:3000/usuario/signin" method="post">
 					<div class="field">
 						<span class="field_title">Nome: </span
-						><input
-							placeholder="Introduza seu nome"
-							class="field_input"
-							name="nome"
-							type="text"
-							name=""
-							id=""
-						/>
+						><input placeholder="Introduza seu nome" class="field_input" name="nome" type="text" name="" id=""/>
 					</div>
 					<div class="field">
 						<span class="field_title">E-mail: </span
@@ -70,7 +65,7 @@
 						><input
 							class="field_input"
 							type="date"
-							name="data-nascimento"
+							name="dataNascimento"
 							id=""
 						/>
 					</div>

@@ -3,6 +3,7 @@ class NoticiaNaoEncontrada extends Error {
         const mensagem = `A notícia com o ID ${idNoticia} não foi encontrada.`
         super(mensagem)
         this.message = mensagem
+        this.name = "Nao encontrado"
     }
 }
 

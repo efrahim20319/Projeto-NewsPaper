@@ -7,7 +7,9 @@ const conexao = require("./infraestrutura/database/conexao")
 const tabelas = require("./infraestrutura/database/tabelas")
 const desporto = require("./Controller/desporto")
 const news = require("./Controller/news")
+const usuario = require("./Controller/usuario")
 const NoticiaNaoEncontrada = require("./errors/noticiaNaoEncontrada")
+const UsuarioNaoEncontrado = require("./errors/usuarioNaoEncontrado")
 
 conexao.connect((erro) => {
     if (erro) {
@@ -19,9 +21,10 @@ conexao.connect((erro) => {
         const publicView = path.resolve(__dirname, 'views', 'telas')
         app.use(express.static(publicView))
         
-        
         app.use("/news", news)
         app.use("/desportos", desporto)
+        app.use("/usuario", usuario)
+
         app.get("/", (req, res) => {
             res.status(300).redirect("http://localhost:3000/home")
         })
@@ -48,10 +51,10 @@ conexao.connect((erro) => {
         app.use((erro, req, res, next) => {
             let status = 500
         
-            if (erro instanceof NoticiaNaoEncontrada)
+            if (erro instanceof NoticiaNaoEncontrada || erro instanceof UsuarioNaoEncontrado)
                 status = 404
         
-            res.status(status).json({erro: erro.message})
+            res.status(status).json({tipo:erro.name, mensagem: erro.message})
         })
         app.listen(port, () => console.log(`Rodando na porta ${port}`))
     }

@@ -3,6 +3,7 @@
     width: 15em;
     border-bottom: 1px solid black;
     height: 1.5em;
+    outline: none;
 }
 
 .field_input:active {
