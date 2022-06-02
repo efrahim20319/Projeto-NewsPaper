@@ -10,6 +10,7 @@ const news = require("./Controller/news")
 const usuario = require("./Controller/usuario")
 const NoticiaNaoEncontrada = require("./errors/noticiaNaoEncontrada")
 const UsuarioNaoEncontrado = require("./errors/usuarioNaoEncontrado")
+const EmailJaExistente = require("./errors/EmailJaCadastrado")
 
 conexao.connect((erro) => {
     if (erro) {
@@ -53,9 +54,18 @@ conexao.connect((erro) => {
         
             if (erro instanceof NoticiaNaoEncontrada || erro instanceof UsuarioNaoEncontrado)
                 status = 404
-        
+            
+            if (erro instanceof EmailJaExistente)
+                status = 406
+
             res.status(status).json({tipo:erro.name, mensagem: erro.message})
         })
+
+        app.use((req, res, next) => {
+            res.status(404).send(
+                "<h1>404 Pagina Nao Encontrada</h1>")
+        })
+
         app.listen(port, () => console.log(`Rodando na porta ${port}`))
     }
 })
